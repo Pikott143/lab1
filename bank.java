@@ -1,0 +1,83 @@
+public class bank {
+    private String name;
+    private int age;
+    private long balance;
+    private long accNumber;
+    private long deposite;
+    
+    public String getName(){
+        return name;
+    }
+    
+    public int getAge(){
+        return age;
+    }
+    
+    public long getbalance(){
+        return balance;
+    }
+    
+    public long getaccNumber(){
+        return accNumber;
+    }
+    
+    public long getdeposite(){
+        return deposite;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+        System.out.println("Name" + this.name);
+    }
+    
+    public void setAge(int age){
+        this.age = age;
+        System.out.println("Age" + this.age);
+    }
+    
+    public void setBalance(long balance){
+        this.balance = balance;
+        System.out.println("Balance" + this.balance);
+    }
+    
+     public void setaccNumber(long accNumber){
+        this.accNumber = accNumber;
+        System.out.println("accNumber" + this.accNumber);
+    }
+     
+       public void setDeposite(long deposite){
+        this.deposite = deposite;
+        System.out.println("deposite" + this.deposite);
+    }
+       
+       public void Summary(){
+           this.balance = this.balance + this.deposite;
+           System.out.println("balance remaining:" + this.balance);
+       }
+     
+}
+
+class Main{
+    public static void main(String[]args){
+        
+        bank i = new bank();
+        bank i2 = new bank();
+        
+        i.setName("aj Cervantes");
+        i.setAge(19);
+        i.setBalance(10000000);
+        i.setaccNumber(12030);
+        i.setDeposite(2023);
+        
+        
+        System.out.println("_________________________");
+        
+        
+        
+        i2.setName("taloyyy");
+        i2.setAge(50);
+        i2.setBalance(300000032);
+        i2.setaccNumber(202021);
+        i2.setDeposite(2000);
+    }
+}
